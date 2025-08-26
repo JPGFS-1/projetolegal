@@ -1,12 +1,13 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
+import Sobre from "./pages/Sobre";
 
 export default function Approutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/Home" element={<Home />} exact />
-        {/* <Route path="/" element={} /> */}
+        <Route path="/" element={<Home />} />
+        <Route path="/Sobre" element={<Sobre />} />
         {/* <Route path="/" element={} /> */}
       </Routes>
     </BrowserRouter>
